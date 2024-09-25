@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="converter-container">
+      <h1 class="converter-title">Unit Converter</h1>
+      <div class="converter-description">
+        Welcome to ConvertUnits.com, your comprehensive online solution for
+        converting various measurement units. Whether you're working with
+        length, weight, or volume, our intuitive conversion calculator makes it
+        easy to achieve accurate results in seconds.
+      </div>
+      <div id="user">
+        <i class="fa-solid fa-user"></i>
+        <span>Nabeel Mohammed</span>
+      </div>
+      <div id="media">
+        <a
+          href="https://www.linkedin.com/in/nabeel-mohammed-abdul-mumin-01a404290"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="My profile on LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <i class="fab fa-google"></i>
+      </div>
+    </div>
+
+    <div class="unit-converter">
+      <h1>Unit Converter</h1>
+      <input
+        type="number"
+        id="unitConverter"
+        placeholder="Enter a value"
+        aria-label="Unit Converter"
+      />
+      <label for="unitType">Select Unit Type:</label>
+      <select id="unitType">
+        <option value="Length">Length</option>
+        <option value="Weight">Weight</option>
+        <option value="Volume">Volume</option>
+      </select>
+      <label for="fromUnit">From:</label>
+      <select id="fromUnit">
+        <!-- Options will be populated dynamically based on unit type -->
+      </select>
+      <label for="toUnit">To:</label>
+      <select id="toUnit">
+        <!-- Options will be populated dynamically based on unit type -->
+      </select>
+      <button id="convert">Convert</button>
+      <div id="result"></div>
+    </div>
+  </body>
+</html>
